@@ -1,2 +1,2 @@
-DATA_PATH = '/Users/polmarin/Documents/Coding/Python/Medium/StoicBot/data/texts'
-DB_PATH = '/Users/polmarin/Documents/Coding/Python/Medium/StoicBot/data/db'
+DATA_PATH = 'D:\Stoic\Stoic_AI\data\texts'
+DB_PATH = 'D:\Stoic\Stoic_AI\data\db'

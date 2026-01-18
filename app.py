@@ -17,7 +17,7 @@ def answer():
     user_input = request.form['user_input']
     bot_message = invoke_rag(user_input)
     print("Bot message:", bot_message)
-    # Define the regex pattern to extract the answer
+
     pattern = r"(Answer:|StoicBot:|Marc Still:)\s*(.*)" #r"StoicBot:\s*(.*)"
     # Search for the pattern in the text
     match = re.search(pattern, bot_message, re.DOTALL)
@@ -33,6 +33,3 @@ def answer():
 if __name__ == '__main__':
     app.run()
 
-## Input 1: What is your name?
-## Input 2: Amazing, so one question: How should I approach the day ahead?
-## Input 3: Ok so here's my dilema: I want to go to the gym today because I haven't gone in the past 3 days but some friends are going out for some beers, so i have to choose between one plan or the other. What should I do?
